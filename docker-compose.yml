@@ -9,7 +9,7 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=connectorbdb
     volumes:
-      - connector-datab:/var/lib/postgresql/data
+      - connector-data:/var/lib/postgresql/data
     networks:
       - local
 
