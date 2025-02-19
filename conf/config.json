@@ -37,17 +37,17 @@
     "ids:outboundModelVersion" : "4.2.7",
     "ids:inboundModelVersion" : [ "4.0.0", "4.1.0", "4.1.2", "4.2.0", "4.2.1", "4.2.2", "4.2.3", "4.2.4", "4.2.5", "4.2.6", "4.2.7" ],
     "ids:title" : [ {
-      "@value" : "Dataspace Connector",
+      "@value" : "DSIL Connector",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     } ],
     "ids:securityProfile" : {
       "@id" : "idsc:BASE_SECURITY_PROFILE"
     },
     "ids:curator" : {
-      "@id" : "https://sovity.de/"
+      "@id" : "https://VTT.fi/"
     },
     "ids:maintainer" : {
-      "@id" : "https://sovity.de/"
+      "@id" : "https://VTT.fi/"
     }
   },
   "ids:trustStore" : {
