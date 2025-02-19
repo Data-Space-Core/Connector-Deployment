@@ -5,11 +5,11 @@ services:
     ports:
       - "5433:5432"
     environment:
-      - POSTGRES_USER=postgresuserb
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=connectorbdb
-    volumes:
-      - connector-data:/var/lib/postgresql/data
+    #volumes:
+    #  - connector-data:/var/lib/postgresql/data
     networks:
       - local
 
@@ -27,9 +27,9 @@ services:
       - DAPS_INCOMING_DAT_DEFAULT_WELLKNOWN=/jwks.json
       - SERVER_SSL_KEY-STORE=file:///conf/testbed2.p12
       # Define the PostgreSQL setup
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresb:5432/connectorbdb
-      - SPRING_DATASOURCE_USERNAME=postgresuserb
-      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/connectorbdb
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
       - SPRING_DATASOURCE_PLATFORM=postgres
       - SPRING_DATASOURCE_DRIVERCLASSNAME=org.postgresql.Driver
       - SPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect
@@ -40,7 +40,7 @@ services:
     networks:
       - local
     depends_on:
-      - postgresb
+      - postgres
 
 volumes:
   connector-datab: {}
