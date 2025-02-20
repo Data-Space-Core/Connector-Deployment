@@ -43,7 +43,7 @@ Follow these steps to start the services using Docker Compose:
    
 2. **Navigate to the project directory**
    ```
-   cd /Connector-Deployment
+   cd Connector-Deployment
    ```
 3. **Start the containers**
    ```
