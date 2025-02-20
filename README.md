@@ -57,11 +57,71 @@ Follow these steps to start the services using Docker Compose:
    ```
    docker compose logs -f connector
    ```
-6. **Access DSIL Connector application**
+6. **Verify DSIL Connector is running**
    ```
-   https://localhost:8081/
+   opening this URL https://localhost:8081/ in Chrome will render the following
+   {
+  "@context": {
+    "ids": "https://w3id.org/idsa/core/",
+    "idsc": "https://w3id.org/idsa/code/"
+  },
+  "@type": "ids:BaseConnector",
+  "@id": "https://connector",
+  "ids:version": "8.0.2",
+  "ids:description": [
+    {
+      "@value": "DSIL Connector built by VTT",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:publicKey": {
+    "@type": "ids:PublicKey",
+    "@id": "https://w3id.org/idsa/autogen/publicKey/78eb73a3-3a2a-4626-a0ff-631ab50a00f9",
+    "ids:keyType": {
+      "@id": "https://w3id.org/idsa/code/RSA"
+    },
+    "ids:keyValue": "TUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF1dzZtRnJkZmxYWlRKZ0ZPQTVzbURYQzA5U21wSldvR3B5RVJaTkV5MzFwS2RzUkdoVGlwUjI3ajlpcm1tcWlodjdnSWd6Q254NmtJUk5HSTJ1MG9GUTVGZ3ZPMXh4Z3pjaWhkcEYwQ2hlT2Y5SU5naXNQa3E1aGo4QWUvRFlYa3ZqaFE2YzZhay9aWWZqME5wcXlFUGNKNU1MUm1ZR2V4TWFNWm1UYnFESnZKbDVKRzMrYkUzWWEyMWhUWllPeGlTaWNwZkZnSjMwa241YVVJQXRkMDVJWnk3ejFzRGlWTHRUWGxMZmUvWlFDNHBuakZ0cyt0YzEyc1g5aWhJbW5Da2QwV3Z6M0NUWm95QlNzYzFUZEJrYjltMEM1dHZnMGZRUDRRZ0YvekgyUW9abm5ySTUydUFaOE1vbVd0WTJsdDNEMGtrcFI2OXBmVkRKN3kzdk4vZXdJREFRQUI="
+  },
+  "ids:title": [
+    {
+      "@value": "DSIL Connector",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    }
+  ],
+  "ids:hasDefaultEndpoint": {
+    "@type": "ids:ConnectorEndpoint",
+    "@id": "https://w3id.org/idsa/autogen/connectorEndpoint/e5e2ab04-633a-44b9-87d9-a097ae6da3cf",
+    "ids:accessURL": {
+      "@id": "https://connectorb:8081/api/ids/data"
+    }
+  },
+  "ids:securityProfile": {
+    "@id": "https://w3id.org/idsa/code/BASE_SECURITY_PROFILE"
+  },
+  "ids:maintainer": {
+    "@id": "https://VTT.fi/"
+  },
+  "ids:curator": {
+    "@id": "https://VTT.fi/"
+  },
+  "ids:inboundModelVersion": [
+    "4.2.6",
+    "4.2.7",
+    "4.2.0",
+    "4.1.2",
+    "4.2.1",
+    "4.0.0",
+    "4.1.0",
+    "4.2.4",
+    "4.2.5",
+    "4.2.2",
+    "4.2.3"
+  ],
+  "ids:outboundModelVersion": "4.2.7"
+}
    ```
 
+Accessing this 
 ## Stopping the Services
 To stop and remove the running containers, run:
 ```sh
