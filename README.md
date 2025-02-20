@@ -36,23 +36,28 @@ The DSIL Connector is deployed as a container and connects to the PostgreSQL dat
 ## Running the DSIL Connector
 Follow these steps to start the services using Docker Compose:
 
-1. **Navigate to the project directory**
+1. **Clone the repository**
    ```
-   cd /path/to/project
+   git clone https://github.com/Data-Space-Core/Connector-Deployment.git
    ```
-2. **Start the containers**
+   
+2. **Navigate to the project directory**
+   ```
+   cd /Connector-Deployment
+   ```
+3. **Start the containers**
    ```
    docker compose up --build -d
    ```
-3. **Verify running containers**
+4. **Verify running containers**
    ```
    docker ps
    ```
-4. **Check logs if needed**
+5. **Check logs if needed**
    ```
    docker compose logs -f <container-id>
    ```
-5. **Access DSIL Connector application**
+6. **Access DSIL Connector application**
    ```
    https://localhost:8081/
    ```
