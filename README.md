@@ -14,12 +14,11 @@ The DSIL Connector is configured using a JSON configuration file (`config.json`)
 
 ### Configuration Highlights
 - **Logging Level:** Minimal Logging
-- **Deployment Mode:** Test Deployment  
-  *To configure for production, change* `"ids:connectorDeployMode": { "@id": "idsc:TEST_DEPLOYMENT" }` *to* `"ids:connectorDeployMode": { "@id": "idsc:PRODUCTIVE_DEPLOYMENT" }` *in `config.json`.*
-- **Security Profile:** Base Security Profile
-- **Connector Status:** Online
-- **Database:** PostgreSQL 13
-- **Keystore and Truststore:** Used for securing the connector
+- **Deployment Mode:** Test Deployment **
+- **Security Profile:** Base Security Profile **
+- **Connector Status:** Online **
+- **Database:** PostgreSQL 13 **
+- **Keystore and Truststore:** Used for securing the connector **
 
 ## Services
 This setup includes the following services defined in the `docker-compose.yml` file:
