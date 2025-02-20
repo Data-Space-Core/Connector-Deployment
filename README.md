@@ -21,7 +21,7 @@ The DSIL Connector is configured using a JSON configuration file (`config.json`)
 - **Keystore and Truststore:** Used for securing the connector
 
 ## Services
-This setup includes the following services defined in the `docker-compose.yml` file:
+This setup includes the following services defined in the `docker compose.yml` file:
 
 ### 1. PostgreSQL Database
 A PostgreSQL container is used to store connector-related data.
