@@ -55,7 +55,7 @@ Follow these steps to start the services using Docker Compose:
    ```
 5. **Access DSIL Connector application**
    ```
-   https://localhost:8001/
+   https://localhost:8081/
    ```
 
 ## Stopping the Services
