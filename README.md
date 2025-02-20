@@ -38,26 +38,26 @@ The DSIL Connector is deployed as a container and connects to the PostgreSQL dat
 Follow these steps to start the services using Docker Compose:
 
 1. **Navigate to the project directory**
-   ```sh
+   ```
    cd /path/to/project
    ```
 2. **Start the containers**
-   ```sh
-   docker-compose up -d
+   ```
+   docker compose up --build -d
    ```
 3. **Verify running containers**
-   ```sh
+   ```
    docker ps
    ```
 4. **Check logs if needed**
-   ```sh
-   docker-compose logs -f connector
+   ```
+   docker compose logs -f <container-id>
    ```
 
 ## Stopping the Services
 To stop and remove the running containers, run:
 ```sh
-docker-compose down
+docker compose down -v
 ```
 
 ## Additional Notes
