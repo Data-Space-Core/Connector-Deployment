@@ -49,13 +49,13 @@ Follow these steps to start the services using Docker Compose:
    ```
    docker compose up --build -d
    ```
-4. **Verify running containers**
+4. **Verify that "connector" and "postgres" containers are running**
    ```
    docker ps
    ```
 5. **Check logs if needed**
    ```
-   docker compose logs -f <container-id>
+   docker compose logs -f connector
    ```
 6. **Access DSIL Connector application**
    ```
