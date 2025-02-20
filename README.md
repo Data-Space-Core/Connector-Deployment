@@ -122,9 +122,8 @@ Follow these steps to start the services using Docker Compose:
      ],
      "ids:outboundModelVersion": "4.2.7"
    }
+   ```
    
-
-Accessing this 
 ## Stopping the Services
 To stop and remove the running containers, run:
 ```sh
