@@ -10,7 +10,7 @@ Before proceeding, ensure you have the following installed on your system:
 - [Docker Compose](https://docs.docker.com/compose/)
 
 ## Configuration
-The IDS Connector is configured using a JSON configuration file (`config.json`). This file defines the logging level, deployment mode, security profiles, public key, endpoints, and connector metadata. It also specifies the trust store and key store locations.
+The DSIL Connector is configured using a JSON configuration file (`config.json`). This file defines the logging level, deployment mode, security profiles, public key, endpoints, and connector metadata. It also specifies the trust store and key store locations.
 
 ### Configuration Highlights
 - **Logging Level:** Minimal Logging
@@ -34,7 +34,7 @@ The DSIL Connector is deployed as a container and connects to the PostgreSQL dat
 
 **Service Name:** `connector`
 
-## Running the IDS Connector
+## Running the DSIL Connector
 Follow these steps to start the services using Docker Compose:
 
 1. **Navigate to the project directory**
@@ -52,6 +52,10 @@ Follow these steps to start the services using Docker Compose:
 4. **Check logs if needed**
    ```
    docker compose logs -f <container-id>
+   ```
+5. **Access DSIL Connector application**
+   ```
+   https://localhost:8001/
    ```
 
 ## Stopping the Services
