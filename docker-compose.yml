@@ -24,9 +24,9 @@ services:
       - CONFIGURATION_PATH=/config/config.json
       - SERVER_SSL_KEY-STORE=file:///conf/testbed2.p12
       
-      - DAPS_URL=https://omejdn
-      - DAPS_TOKEN_URL=https://omejdn/auth/token
-      - DAPS_KEY_URL=https://omejdn/auth/jwks.json
+      - DAPS_URL=https://digi4live.collab-cloud.eu/auth
+      - DAPS_TOKEN_URL=https://digi4live.collab-cloud.eu/auth/token
+      - DAPS_KEY_URL=https://digi4live.collab-cloud.eu/auth/jwks.json
       - DAPS_INCOMING_DAT_DEFAULT_WELLKNOWN=/jwks.json
      
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/connectorbdb
